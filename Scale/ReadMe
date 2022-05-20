@@ -1,7 +1,13 @@
 How to use the scale:
 
 Initially, you'll need to calibrate the scale with ScaleCalibration.ino. 
-With this program, you can determine a number with which to tweak the output values to something reasonable.
+The calibration_factor value can be adjust by inputting into the Serial Monitor in the Arduino IDE
+To use it, you'll need an Arduino with a scale attached, a weight of known mass, and a computer
+With the Arduino connected to the computer and running, 
+Place the object of known mass on the scale.
+Type a or + to adjust calibration_factor up,
+or z or - to adjust calibration_factor down
+When the value outputted to the monitor is equal to the known mass of the object on the scale, make note of the calibration_factor value.
 Different scales will need to be calibrated individually.
 Once you determine a value, you'll use it as the calibration_factor in the ScaleBuzzer.ino.
 
