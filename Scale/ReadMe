@@ -1,1 +1,10 @@
-This is where the stuff for the scale alarm will go
+How to use the scale:
+
+Initially, you'll need to calibrate the scale with ScaleCalibration.ino. 
+With this program, you can determine a number with which to tweak the output values to something reasonable.
+Different scales will need to be calibrated individually.
+Once you determine a value, you'll use it as the calibration_factor in the ScaleBuzzer.ino.
+
+ScaleBuzzer.ino is set up specifically for an Arduino Uno
+  -other Arduino types will need to be adjusted regarding pin numbers on hardware and in code
+    -I'll try to add a diagram soon
